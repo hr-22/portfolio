@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamsikha Rajagopal — Portfolio</title>
+    <meta name="description" content="Portfolio of Hamsikha Rajagopal — Software Developer, ECE Engineer, and Creative Soul based in Chennai.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading">
+
+    <!-- SCROLL PROGRESS BAR -->
+    <div id="scrollProgress" class="scroll-progress-bar"></div>
+
+    <!-- LOADING SCREEN -->
+    <div id="loader" class="loader">
+        <div class="loader-bg"></div>
+        <div class="loader-content">
+            <div class="loader-name">
+                <div class="loader-letter-clip"><span style="animation-delay:0s">H</span></div>
+                <div class="loader-letter-clip"><span style="animation-delay:0.07s">A</span></div>
+                <div class="loader-letter-clip"><span style="animation-delay:0.14s">M</span></div>
+                <div class="loader-letter-clip"><span style="animation-delay:0.21s">S</span></div>
+                <div class="loader-letter-clip"><span style="animation-delay:0.28s">I</span></div>
+                <div class="loader-letter-clip"><span style="animation-delay:0.35s">K</span></div>
+                <div class="loader-letter-clip"><span style="animation-delay:0.42s">H</span></div>
+                <div class="loader-letter-clip"><span style="animation-delay:0.49s">A</span></div>
+            </div>
+            <div class="loader-sub">
+                <span class="loader-sub-inner">portfolio &nbsp;·&nbsp; 2026</span>
+            </div>
+        </div>
+        <div class="loader-wipe"></div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div id="cursorDot" class="cursor-dot"></div>
+    <div id="cursorRing" class="cursor-ring"></div>
+
+    <!-- SPINNING SIDE ELEMENT -->
+    <div class="spin-container" id="spinContainer">
+        <svg class="spin-svg" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path id="textCircle" d="M 65,65 m -48,0 a 48,48 0 1,1 96,0 a 48,48 0 1,1 -96,0"/>
+            </defs>
+            <text class="spin-text-path">
+                <textPath href="#textCircle" startOffset="0%">
+                    PORTFOLIO ✦ HAMSIKHA ✦ EXPLORE ✦ 2026 ✦&nbsp;
+                </textPath>
+            </text>
+        </svg>
+        <div class="spin-core">✦</div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav id="mainNav" class="nav">
+        <a href="#hero" class="nav-logo">HR</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#work" class="nav-link">Work</a></li>
+            <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#contact" class="nav-link contact-nav-btn">Contact ↗</a></li>
+        </ul>
+        <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+            <span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#about"   class="mobile-link" data-close>About</a>
+        <a href="#skills"  class="mobile-link" data-close>Skills</a>
+        <a href="#work"    class="mobile-link" data-close>Work</a>
+        <a href="#hobbies" class="mobile-link" data-close>Hobbies</a>
+        <a href="#gallery" class="mobile-link" data-close>Gallery</a>
+        <a href="#contact" class="mobile-link" data-close>Contact</a>
+    </div>
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section id="hero" class="hero">
+        <div class="hero-blobs" aria-hidden="true">
+            <div class="blob b1"></div>
+            <div class="blob b2"></div>
+            <div class="blob b3"></div>
+            <div class="blob b4"></div>
+            <div class="blob b5"></div>
+        </div>
+        <div class="grain-overlay" aria-hidden="true"></div>
+        <div class="hero-bg-word" aria-hidden="true">PORTFOLIO</div>
+
+        <div class="hero-inner">
+            <div class="hero-left">
+                <p class="hero-eyebrow reveal-fade">
+                    <span class="eyebrow-line"></span>
+                    Software Developer &nbsp;·&nbsp; ECE Engineer &nbsp;·&nbsp; Creative Soul
+                </p>
+                <h1 class="hero-name">
+                    <div class="name-clip reveal-name" style="animation-delay:0.1s">HAMSIKHA</div>
+                    <div class="name-clip italic-name reveal-name" style="animation-delay:0.2s">RAJAGOPAL</div>
+                </h1>
+                <p class="hero-tagline reveal-fade" style="animation-delay:0.5s">
+                    Building things that are<br>
+                    <span class="rotating-word" id="rotatingWord">functional</span>
+                    <em>&amp; beautiful</em>
+                </p>
+                <div class="hero-cta reveal-fade" style="animation-delay:0.65s">
+                    <a href="#work" class="btn btn-dark">View My Work ↓</a>
+                    <a href="#contact" class="btn btn-ghost">Let's Talk ↗</a>
+                </div>
+                <div class="hero-socials reveal-fade" style="animation-delay:0.8s">
+                    <a href="https://github.com/hr-22" target="_blank" class="social-chip">GitHub</a>
+                    <a href="https://www.linkedin.com/in/hamsikha-rajagopal-a32" target="_blank" class="social-chip">LinkedIn</a>
+                    <a href="mailto:hamsikharajagopal@gmail.com" class="social-chip">Email</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                
+                <div class="hero-img-frame reveal-scale">
+                    <img
+                        src="assets/hero-photo.jpg"
+                        alt="Hamsikha Rajagopal"
+                        class="hero-img"
+                        onerror="this.style.display='none'; this.parentElement.classList.add('img-error')"
+                    >
+                    <div class="hero-img-deco-ring"></div>
+                    <div class="hero-img-badge"><span>📍 Chennai, TN</span></div>
+                    <div class="hero-img-tag-corner">2025</div>
+                </div>
+                <div class="hero-float-tag reveal-fade" style="animation-delay:0.7s">
+                    <span>ECE</span>
+                    <span>ENGINEER</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-hint">
+            <div class="scroll-track"><div class="scroll-dot-anim"></div></div>
+            
+        </div>
+    </section>
+
+    <!-- MARQUEE STRIP -->
+    <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>Python</span><em>✦</em>
+                <span>C++</span><em>✦</em>
+                <span>C#</span><em>✦</em>
+                <span>JavaScript</span><em>✦</em>
+                <span>HTML &amp; CSS</span><em>✦</em>
+                <span>SQL</span><em>✦</em>
+                <span>Machine Learning</span><em>✦</em>
+                <span>NLP</span><em>✦</em>
+                <span>IoT &amp; Embedded</span><em>✦</em>
+                <span>Web Development</span><em>✦</em>
+                <span>Data Analytics</span><em>✦</em>
+                <span>Signal Processing</span><em>✦</em>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span>Python</span><em>✦</em>
+                <span>C++</span><em>✦</em>
+                <span>C#</span><em>✦</em>
+                <span>JavaScript</span><em>✦</em>
+                <span>HTML &amp; CSS</span><em>✦</em>
+                <span>SQL</span><em>✦</em>
+                <span>Machine Learning</span><em>✦</em>
+                <span>NLP</span><em>✦</em>
+                <span>IoT &amp; Embedded</span><em>✦</em>
+                <span>Web Development</span><em>✦</em>
+                <span>Data Analytics</span><em>✦</em>
+                <span>Signal Processing</span><em>✦</em>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         ABOUT SECTION
+    ============================================================ -->
+    <section id="about" class="section about-section">
+        <div class="section-inner">
+            <div class="about-layout">
+                <div class="about-visual">
+                    
+                    <div class="about-img-wrap reveal-scale">
+                        <div class="about-img-bg-deco"></div>
+                        <img
+                            src="assets/about.jpg"
+                            alt="Hamsikha — About"
+                            class="about-img"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('img-error')"
+                        >
+                        <div class="about-img-sticker">✦ ECE '26</div>
+                    </div>
+
+                    <div class="about-info-card reveal-up">
+                        <div class="info-row">
+                            <span class="info-ico">📍</span>
+                            <span>Chennai, Tamil Nadu</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-ico">🎓</span>
+                            <span>B.E. ECE — Sri Sairam Engineering College, 2026</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-ico">💼</span>
+                            <span>3 Internships · Currently @ Psiog (IMPACT)</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-ico">🌐</span>
+                            <span>Tamil · English · Hindi · Español · 한국어 · Sanskrit</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-ico">📜</span>
+                            <span>10 NPTEL Certifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text-col">
+                    <div class="section-tag reveal-up">01 — About Me</div>
+                    <h2 class="section-heading reveal-up">
+                        Hello,<br>I'm <em>Hamsikha</em>
+                    </h2>
+                    <div class="about-body reveal-up">
+                        <p>
+                            I'm an aspiring Software Developer with a versatile skill set spanning Python, C++, and modern web technologies. Currently in my final year of Electronics and Communication Engineering at Sri Sairam Engineering College. 
+                        </p>
+                        <p>
+                            From assembling PCBs to building dashboards, from learning to optimize signal flow at a petroleum refinery to crafting real-time collision avoidance systems — I love problems that push me to think in multiple dimensions at once.
+                        </p>
+                        <p>
+                            I'm a proactive learner who thrives in results-driven environments and genuinely believes that the best environment to work is the one which has more to learn.
+                        </p>
+                    </div>
+
+                    <div class="about-stats reveal-up">
+                        <div class="stat-item">
+                            <span class="stat-num">3</span>
+                            <span class="stat-label">Internships</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">4+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">10</span>
+                            <span class="stat-label">NPTEL Certs</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">6</span>
+                            <span class="stat-label">Languages</span>
+                        </div>
+                    </div>
+
+                    <div class="journey reveal-up">
+                        <div class="journey-title">My Journey</div>
+                        <div class="journey-track">
+                            <div class="journey-item">
+                                <div class="journey-dot"></div>
+                                <div class="journey-content">
+                                    <div class="journey-year">2008–2020</div>
+                                    <strong>Modern Senior Secondary School</strong>
+                                    <span>Schooling · Senior Secondary</span>
+                                </div>
+                            </div>
+                            <div class="journey-item">
+                                <div class="journey-dot"></div>
+                                <div class="journey-content">
+                                    <div class="journey-year">2022–2026</div>
+                                    <strong>Sri Sairam Engineering College</strong>
+                                    <span>B.E. Electronics &amp; Communication Engineering</span>
+                                </div>
+                            </div>
+                            <div class="journey-item">
+                                <div class="journey-dot"></div>
+                                <div class="journey-content">
+                                    <div class="journey-year">Dec 2024</div>
+                                    <strong>Sansel Instruments and Controls</strong>
+                                    <span>Intern — PCB Assembly &amp; QA</span>
+                                </div>
+                            </div>
+                            <div class="journey-item">
+                                <div class="journey-dot"></div>
+                                <div class="journey-content">
+                                    <div class="journey-year">Jun–Jul 2025</div>
+                                    <strong>Chennai Petroleum Corporation Ltd.</strong>
+                                    <span>Intern — Digitalization &amp; Instrumentation</span>
+                                </div>
+                            </div>
+                            <div class="journey-item active-item">
+                                <div class="journey-dot pulse"></div>
+                                <div class="journey-content">
+                                    <div class="journey-year">Now ✦</div>
+                                    <strong>Psiog — IMPACT Programme</strong>
+                                    <span>Intern · Currently ongoing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS SECTION
+    ============================================================ -->
+    <section id="skills" class="section skills-section">
+        <div class="section-inner">
+            <div class="skills-header reveal-up">
+                <div class="section-tag">02 — Skills</div>
+                <h2 class="section-heading">What I<br><em>Work With</em></h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category reveal-up" style="animation-delay:0.0s">
+                    <h3 class="skill-cat-label">Languages</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill primary">Python</span>
+                        <span class="skill-pill primary">C++</span>
+                        <span class="skill-pill primary">C#</span>
+                        <span class="skill-pill primary">JavaScript</span>
+                        <span class="skill-pill primary">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up" style="animation-delay:0.08s">
+                    <h3 class="skill-cat-label">Web &amp; UI</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">HTML5</span>
+                        <span class="skill-pill">CSS3</span>
+                        <span class="skill-pill">Vanilla JS</span>
+                        <span class="skill-pill">Streamlit</span>
+                        <span class="skill-pill">Plotly</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up" style="animation-delay:0.16s">
+                    <h3 class="skill-cat-label">ML &amp; Data</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Machine Learning</span>
+                        <span class="skill-pill">Deep Learning</span>
+                        <span class="skill-pill">NLP</span>
+                        <span class="skill-pill">Sentiment Analysis</span>
+                        <span class="skill-pill">Data Analytics</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up" style="animation-delay:0.24s">
+                    <h3 class="skill-cat-label">Systems &amp; Hardware</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">IoT Protocols</span>
+                        <span class="skill-pill">Embedded Systems</span>
+                        <span class="skill-pill">DCS &amp; PLCs</span>
+                        <span class="skill-pill">Sensor Fusion</span>
+                        <span class="skill-pill">Signal Processing</span>
+                        <span class="skill-pill">PCB Assembly</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up" style="animation-delay:0.32s">
+                    <h3 class="skill-cat-label">Soft Skills</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill soft">Team Collaboration</span>
+                        <span class="skill-pill soft">Problem Solving</span>
+                        <span class="skill-pill soft">Adaptability</span>
+                        <span class="skill-pill soft">Analytical Thinking</span>
+                        <span class="skill-pill soft">Multilingual Comms</span>
+                    </div>
+                </div>
+
+                <div class="skill-category certifications reveal-up" style="animation-delay:0.4s">
+                    <h3 class="skill-cat-label">NPTEL Certifications</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <span class="cert-dot">◆</span>
+                            <span>Introduction to Industry 4.0 &amp; Industrial IoT</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-dot">◆</span>
+                            <span>Computer Networks &amp; Internet Protocol</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-dot">◆</span>
+                            <span>Introduction to Internet of Things</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-dot">◆</span>
+                            <span>Simulation of Communication Systems using Matlab</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-dot">◆</span>
+                            <span>Machine Learning and Deep Learning — Fundamentals &amp; Applications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS SECTION
+    ============================================================ -->
+    <section id="work" class="section work-section">
+        <div class="section-inner">
+            <div class="work-header reveal-up">
+                <div class="section-tag">03 — Projects</div>
+                <h2 class="section-heading">Things I've<br><em>Built</em></h2>
+                <p class="section-sub">A collection of projects spanning systems programming, ML, IoT, and the web.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card reveal-up" style="animation-delay:0s">
+                    <div class="project-card-header">
+                        <span class="project-num">01</span>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">CLI</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">IRCTC++<br><span>Recreation</span></h3>
+                    <p class="project-desc">
+                        A command-line recreation of the IRCTC train booking system built in C++. Features train search, passenger management, seat booking, ticket generation, and booking history — all architected with clean OOP principles. A deep dive into structured data modeling and CLI UX.
+                    </p>
+                    <div class="project-hover-bg"></div>
+                </article>
+
+                <article class="project-card reveal-up" style="animation-delay:0.1s">
+                    <div class="project-card-header">
+                        <span class="project-num">02</span>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">CRUD</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">TaskFlow<br><span>Todo App</span></h3>
+                    <p class="project-desc">
+                        A clean, functional task management application built with C#. Supports full CRUD operations — create, read, update, delete — with persistent storage and a smooth interface. Built to practice .NET fundamentals and application state management.
+                    </p>
+                    <div class="project-hover-bg"></div>
+                </article>
+
+                <article class="project-card featured reveal-up" style="animation-delay:0.2s">
+                    <div class="project-featured-badge">★ Featured</div>
+                    <div class="project-card-header">
+                        <span class="project-num">03</span>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">ML</span>
+                            <span class="tech-tag">LiDAR</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">V2V Smart<br><span>Traffic System</span></h3>
+                    <p class="project-desc">
+                        A V2V (Vehicle-to-Vehicle) smart traffic management system combining LiDAR sensing with machine learning models and traffic-flow simulation. Implements real-time collision avoidance, congestion prediction, and adaptive signal control. Deep skills in embedded systems, wireless comms, IoT protocols, and sensor fusion.
+                    </p>
+                    <div class="project-hover-bg"></div>
+                </article>
+
+                <article class="project-card featured reveal-up" style="animation-delay:0.3s">
+                    <div class="project-featured-badge">★ Featured</div>
+                    <div class="project-card-header">
+                        <span class="project-num">04</span>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Plotly</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SentiVision<br><span>Sentiment Dashboard</span></h3>
+                    <p class="project-desc">
+                        A multi-page sentiment analysis dashboard built with Streamlit. Collaborated with teammates to design and implement a full ML prediction pipeline. Added secure authentication, sector-based navigation, and interactive Plotly visualizations. Developed a responsive, custom-styled UI with real-time data-driven feedback insights.
+                    </p>
+                    <div class="project-hover-bg"></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         HOBBIES SECTION
+    ============================================================ -->
+    <section id="hobbies" class="section hobbies-section">
+        <div class="section-inner">
+            <div class="hobbies-header reveal-up">
+                <div class="section-tag">04 — Beyond the Code</div>
+                <h2 class="section-heading">When I'm<br><em>Not Coding</em></h2>
+                <p class="section-sub">A whole human lives here — not just a developer.</p>
+            </div>
+
+            <div class="hobbies-bento">
+                <div class="hobby-card big-card fc-card reveal-up" style="animation-delay:0s">
+                    <div class="hobby-emoji-bg" aria-hidden="true">⚽</div>
+                    <div class="hobby-card-content">
+                        <h3 class="hobby-title">Football Fanatic</h3>
+                        <p class="hobby-desc">Bleeding red &amp; white for <strong>Arsenal</strong>. Screaming <em>Allez les Bleus</em> every tournament. Football is basically a religion at this point.</p>
+                        <div class="hobby-chips">
+                            <span>Arsenal FC</span>
+                            <span>France NT</span>
+                            <span>Premier League</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hobby-card book-card reveal-up" style="animation-delay:0.08s">
+                    <div class="hobby-emoji-sm">📚</div>
+                    <div class="hobby-card-content">
+                        <h3 class="hobby-title">Mini-Library Owner</h3>
+                        <p class="hobby-desc">Fantasy, Sci-Fi, space operas — if it has world-building and adventure, I'm sold. Current favs: <em>Mistborn, Red Rising, ORV, Project Hail Mary</em>.</p>
+                    </div>
+                </div>
+
+                <div class="hobby-card music-card reveal-up" style="animation-delay:0.16s">
+                    <div class="hobby-emoji-sm">🎵</div>
+                    <div class="hobby-card-content">
+                        <h3 class="hobby-title">Carnatic Singer</h3>
+                        <p class="hobby-desc">Grade 5 certified, performed at <strong>Narada Gana Sabha</strong>. Picking up keyboard &amp; guitar on the side — because why stop at one instrument?</p>
+                    </div>
+                </div>
+
+                <div class="hobby-card game-card reveal-up" style="animation-delay:0.24s">
+                    <div class="hobby-emoji-sm">🎮</div>
+                    <div class="hobby-card-content">
+                        <h3 class="hobby-title">Daily Gamer</h3>
+                        <p class="hobby-desc">Not coding? Probably gaming. Single-player RPGs and Metroidvania 2D platformers are my therapy. The explore-everything type.</p>
+                    </div>
+                </div>
+
+                <div class="hobby-card astro-card reveal-up" style="animation-delay:0.48s">
+                    <div class="hobby-emoji-bg" aria-hidden="true">🔭</div>
+                    <div class="hobby-card-content">
+                        <h3 class="hobby-title">Stargazer</h3>
+                        <p class="hobby-desc">Space is endlessly fascinating — from black holes to exoplanets, I try to keep up with the latest in astronomy and astrophysics. If there's a telescope nearby, I'm pointing it at something.</p>
+                        <div class="hobby-chips">
+                            <span>Astronomy</span>
+                            <span>Astrophysics</span>
+                            <span>Space News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hobby-card lang-card wide-card reveal-up" style="animation-delay:0.32s">
+                    <div class="hobby-emoji-sm">🌍</div>
+                    <div class="hobby-card-content">
+                        <h3 class="hobby-title">Language Collector</h3>
+                        <p class="hobby-desc">Fluent in three, learning more just because. Korean is a work in progress — I can read &amp; write, understanding is... getting there.</p>
+                        <div class="lang-row">
+                            <span title="Tamil">தமிழ்</span>
+                            <span title="English">English</span>
+                            <span title="Hindi">हिन्दी</span>
+                            <span title="Spanish">Español</span>
+                            <span title="Korean">한국어</span>
+                            <span title="Sanskrit">संस्कृत</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hobby-card fashion-card reveal-up" style="animation-delay:0.4s">
+                    <div class="hobby-emoji-sm">💄</div>
+                    <div class="hobby-card-content">
+                        <h3 class="hobby-title">Style &amp; Self-Expression</h3>
+                        <p class="hobby-desc">Fashion and makeup are my canvas. Bold lip? Always. Self-expression is just art with a different medium.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         GALLERY SECTION
+    ============================================================ -->
+    <section id="gallery" class="section gallery-section">
+        <div class="section-inner">
+            <div class="gallery-header reveal-up">
+                <div class="section-tag">05 — Life in Frames</div>
+                <h2 class="section-heading">A Peek Into<br><em>My World</em></h2>
+            </div>
+
+            <div class="gallery-layout">
+                <div class="gallery-stack-wrap reveal-scale">
+                    
+                    <div class="gallery-card-deck" id="galleryDeck">
+                        <div class="g-card active" data-idx="0">
+                            <img src="assets/gallery-1.jpg" alt="Moment 1" onerror="this.style.display='none'">
+                            <div class="g-card-label">Enjoying thw view of Chepauk ✦</div>
+                        </div>
+                        <div class="g-card" data-idx="1">
+                            <img src="assets/gallery-2.jpg" alt="Moment 2" onerror="this.style.display='none'">
+                            <div class="g-card-label">A glimpse into the library of worlds ✦</div>
+                        </div>
+                        <div class="g-card" data-idx="2">
+                            <img src="assets/gallery-3.jpg" alt="Moment 3" onerror="this.style.display='none'">
+                            <div class="g-card-label">Experiencing new worlds through words ✦</div>
+                        </div>
+                        <div class="g-card" data-idx="3">
+                            <img src="assets/gallery-4.jpg" alt="Moment 4" onerror="this.style.display='none'">
+                            <div class="g-card-label">LiDAR based object avoidance project ✦</div>
+                        </div>
+                        <div class="g-card" data-idx="4">
+                            <img src="assets/gallery-5.jpg" alt="Moment 5" onerror="this.style.display='none'">
+                            <div class="g-card-label">Where my heart lies ✦</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev-btn" id="galleryPrev" aria-label="Previous photo">←</button>
+                        <span class="gallery-counter">
+                            <span id="gCurrentNum">1</span>
+                            <span class="g-sep">/</span>
+                            <span id="gTotalNum">5</span>
+                        </span>
+                        <button class="gallery-btn next-btn" id="galleryNext" aria-label="Next photo">→</button>
+                    </div>
+                    <div class="gallery-dots" id="galleryDots">
+                        <span class="g-dot active" data-dot="0"></span>
+                        <span class="g-dot" data-dot="1"></span>
+                        <span class="g-dot" data-dot="2"></span>
+                        <span class="g-dot" data-dot="3"></span>
+                        <span class="g-dot" data-dot="4"></span>
+                    </div>
+                    <p class="gallery-drag-hint">drag or swipe ✦ auto-plays</p>
+                </div>
+
+                <div class="gallery-side-text reveal-up">
+                    <p class="gallery-big-text">Memories<br>&amp;<br>Moments</p>
+                    <p class="gallery-note">A peek into my life</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+    ============================================================ -->
+    <section id="contact" class="section contact-section">
+        <div class="contact-blobs" aria-hidden="true">
+            <div class="c-blob cb1"></div>
+            <div class="c-blob cb2"></div>
+        </div>
+
+        <div class="section-inner">
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <div class="section-tag light reveal-up">06 — Let's Connect</div>
+                    <h2 class="section-heading light reveal-up">
+                        Have something<br>in mind? <em>Say hi.</em>
+                    </h2>
+                    <p class="contact-sub reveal-up">
+                        Open to job opportunities, internships, collaborations — or honestly just a great conversation about books, football, or anything in between.
+                    </p>
+                    <a href="mailto:hamsikharajagopal@gmail.com" class="contact-email-link reveal-up">
+                        hamsikharajagopal@gmail.com ↗
+                    </a>
+                </div>
+
+                <div class="contact-right reveal-up">
+                    <div class="contact-links-stack">
+                        <a href="tel:+917305410441" class="contact-link-row">
+                            <span class="clink-label">Phone</span>
+                            <span class="clink-value">+91 73054 10441</span>
+                            <span class="clink-arr">↗</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hamsikha-rajagopal-a32" target="_blank" class="contact-link-row">
+                            <span class="clink-label">LinkedIn</span>
+                            <span class="clink-value">hamsikha-rajagopal-a32</span>
+                            <span class="clink-arr">↗</span>
+                        </a>
+                        <a href="https://github.com/hr-22" target="_blank" class="contact-link-row">
+                            <span class="clink-label">GitHub</span>
+                            <span class="clink-value">github.com/hr-22</span>
+                            <span class="clink-arr">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <span>Designed &amp; Built by Hamsikha Rajagopal</span>
+            <span class="footer-sep">✦</span>
+            <span>2026</span>
+            <span class="footer-sep">✦</span>
+            <a href="https://github.com/hr-22" target="_blank">hr-22</a>
+        </footer>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

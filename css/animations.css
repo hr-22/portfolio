@@ -1,0 +1,283 @@
+/* ================================================================
+   animations.css — All keyframes and animation utility classes
+   Portfolio: Hamsikha Rajagopal
+   ================================================================ */
+
+/* ----------------------------------------------------------------
+   KEYFRAMES
+   ---------------------------------------------------------------- */
+
+@keyframes letterReveal {
+    0%   { transform: translateY(110%); opacity: 0; }
+    60%  { opacity: 1; }
+    100% { transform: translateY(0);   opacity: 1; }
+}
+
+@keyframes subFade {
+    0%   { opacity: 0; transform: translateY(12px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes progressFill {
+    0%   { width: 0%; }
+    80%  { width: 85%; }
+    100% { width: 100%; }
+}
+
+@keyframes loaderWipe {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+@keyframes blobOne {
+    0%,100% {
+        transform: translate(0,0) scale(1);
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    25% {
+        transform: translate(60px, -40px) scale(1.08);
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        transform: translate(30px, 50px) scale(0.92);
+        border-radius: 50% 50% 40% 60% / 40% 60% 40% 60%;
+    }
+    75% {
+        transform: translate(-40px, 20px) scale(1.04);
+        border-radius: 40% 60% 70% 30% / 50% 40% 60% 50%;
+    }
+}
+
+@keyframes blobTwo {
+    0%,100% {
+        transform: translate(0,0) scale(1);
+        border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    }
+    33% {
+        transform: translate(-50px, 60px) scale(1.1);
+        border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+    }
+    66% {
+        transform: translate(40px, -30px) scale(0.9);
+        border-radius: 60% 40% 40% 60% / 30% 70% 30% 70%;
+    }
+}
+
+@keyframes blobThree {
+    0%,100% {
+        transform: translate(0,0) scale(1);
+        border-radius: 50% 50% 30% 70% / 50% 30% 70% 50%;
+    }
+    40% {
+        transform: translate(35px, 45px) scale(1.06);
+        border-radius: 70% 30% 50% 50% / 40% 60% 40% 60%;
+    }
+    70% {
+        transform: translate(-25px, -35px) scale(0.94);
+        border-radius: 30% 70% 60% 40% / 60% 40% 60% 40%;
+    }
+}
+
+@keyframes blobFour {
+    0%,100% {
+        transform: translate(0,0) scale(1);
+        border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+    }
+    30% {
+        transform: translate(-60px, -20px) scale(1.05);
+        border-radius: 60% 40% 40% 60% / 30% 60% 40% 70%;
+    }
+    60% {
+        transform: translate(20px, 60px) scale(0.95);
+        border-radius: 30% 70% 70% 30% / 40% 50% 50% 60%;
+    }
+}
+
+@keyframes blobFive {
+    0%,100% {
+        transform: translate(0,0) scale(1);
+        border-radius: 60% 40% 50% 50% / 40% 60% 50% 50%;
+    }
+    50% {
+        transform: translate(50px, -50px) scale(1.12);
+        border-radius: 40% 60% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+@keyframes marqueeRoll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+@keyframes spinCW {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+@keyframes scrollDotBounce {
+    0%   { transform: translateY(0); opacity: 1; }
+    70%  { transform: translateY(18px); opacity: 0.3; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes grainMove {
+    0%,100% { transform: translate(0,0); }
+    10% { transform: translate(-2%, -2%); }
+    20% { transform: translate(2%, -3%); }
+    30% { transform: translate(-3%, 2%); }
+    40% { transform: translate(3%, 3%); }
+    50% { transform: translate(-2%, 1%); }
+    60% { transform: translate(2%, -2%); }
+    70% { transform: translate(-1%, 3%); }
+    80% { transform: translate(1%, -1%); }
+    90% { transform: translate(-3%, -2%); }
+}
+
+@keyframes nameSlideUp {
+    0%   { transform: translateY(100%); opacity: 0; clip-path: inset(0 0 100% 0); }
+    100% { transform: translateY(0);   opacity: 1; clip-path: inset(0 0 0% 0); }
+}
+
+@keyframes fadeUp {
+    0%   { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes scaleIn {
+    0%   { transform: scale(0.88); opacity: 0; }
+    100% { transform: scale(1);    opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes lineGrow {
+    from { width: 0; }
+    to   { width: 2.5rem; }
+}
+
+@keyframes wordFlipIn {
+    0%   { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(0);     opacity: 1; }
+}
+
+@keyframes wordFlipOut {
+    0%   { transform: translateY(0);    opacity: 1; }
+    100% { transform: translateY(100%); opacity: 0; }
+}
+
+/* ----------------------------------------------------------------
+   SCROLL REVEAL CLASSES
+   ---------------------------------------------------------------- */
+
+.reveal-up,
+.reveal-fade,
+.reveal-scale,
+.reveal-name {
+    opacity: 0;
+}
+
+.reveal-up.visible {
+    animation: fadeUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.reveal-fade.visible {
+    animation: fadeIn 0.8s ease both;
+}
+
+.reveal-scale.visible {
+    animation: scaleIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.reveal-name.visible {
+    animation: nameSlideUp 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ----------------------------------------------------------------
+   LOADER
+   ---------------------------------------------------------------- */
+
+.loader-letter-clip span {
+    display: block;
+    animation: letterReveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.loader-sub .loader-sub-inner {
+    display: block;
+    animation: subFade 0.6s ease both;
+    animation-delay: 0.7s;
+}
+
+.loader-progress-inner {
+    animation: progressFill 2.2s cubic-bezier(0.4, 0, 0.2, 1) both;
+    animation-delay: 0.2s;
+}
+
+.loader.exiting .loader-wipe {
+    animation: loaderWipe 0.85s cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+
+/* ----------------------------------------------------------------
+   BLOB ANIMATIONS
+   ---------------------------------------------------------------- */
+
+.blob.b1 { animation: blobOne   14s ease-in-out infinite; }
+.blob.b2 { animation: blobTwo   18s ease-in-out infinite reverse; }
+.blob.b3 { animation: blobThree 16s ease-in-out infinite 2s; }
+.blob.b4 { animation: blobFour  20s ease-in-out infinite 4s reverse; }
+.blob.b5 { animation: blobFive  12s ease-in-out infinite 1s; }
+
+.c-blob.cb1 { animation: blobOne   16s ease-in-out infinite; }
+.c-blob.cb2 { animation: blobThree 14s ease-in-out infinite 3s reverse; }
+
+/* ----------------------------------------------------------------
+   MARQUEE
+   ---------------------------------------------------------------- */
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marqueeRoll 30s linear infinite;
+}
+
+.marquee-strip:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+/* ----------------------------------------------------------------
+   SPIN ELEMENT
+   ---------------------------------------------------------------- */
+
+.spin-svg {
+    animation: spinCW 12s linear infinite;
+}
+
+/* ----------------------------------------------------------------
+   SCROLL DOT
+   ---------------------------------------------------------------- */
+
+.scroll-dot-anim {
+    animation: scrollDotBounce 1.8s ease-in-out infinite;
+}
+
+/* ----------------------------------------------------------------
+   GRAIN
+   ---------------------------------------------------------------- */
+
+.grain-overlay::after {
+    animation: grainMove 0.15s steps(1) infinite;
+}
+
+/* ----------------------------------------------------------------
+   REDUCED MOTION
+   ---------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+}
